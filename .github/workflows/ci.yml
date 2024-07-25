@@ -31,7 +31,7 @@ jobs:
             target: standard
     timeout-minutes: 60
     env:
-      CONTAINER_IMAGE_ID: "ghcr.io/super-linter/super-linter:${{ matrix.images.prefix }}latest"
+      CONTAINER_IMAGE_ID: "ghcr.io/CoulombTechnologies/super-linter:${{ matrix.images.prefix }}latest"
       CONTAINER_IMAGE_TARGET: "${{ matrix.images.target }}"
       CONTAINER_IMAGE_OUTPUT_IMAGE_NAME: "super-linter-${{ matrix.images.prefix }}latest"
     steps:
@@ -136,7 +136,7 @@ jobs:
             prefix: slim-
             target: slim
     env:
-      CONTAINER_IMAGE_ID: "ghcr.io/super-linter/super-linter:${{ matrix.images.prefix }}latest"
+      CONTAINER_IMAGE_ID: "ghcr.io/CoulombTechnologies/super-linter:${{ matrix.images.prefix }}latest"
       CONTAINER_IMAGE_TARGET: "${{ matrix.images.target }}"
       CONTAINER_IMAGE_OUTPUT_IMAGE_NAME: "super-linter-${{ matrix.images.prefix }}latest"
     steps:
@@ -230,7 +230,7 @@ jobs:
           # Don't validate container image labels because we do that when building the image
           - test-case: validate-container-image-labels
     env:
-      CONTAINER_IMAGE_ID: "ghcr.io/super-linter/super-linter:${{ matrix.images.prefix }}latest"
+      CONTAINER_IMAGE_ID: "ghcr.io/CoulombTechnologies/super-linter:${{ matrix.images.prefix }}latest"
       CONTAINER_IMAGE_TARGET: "${{ matrix.images.target }}"
       CONTAINER_IMAGE_OUTPUT_IMAGE_NAME: "super-linter-${{ matrix.images.prefix }}latest"
     steps:
