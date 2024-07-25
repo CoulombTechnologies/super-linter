@@ -1,6 +1,6 @@
 {
   "name": "Super-Linter",
-  "image": "ghcr.io/super-linter/super-linter:latest",
+  "image": "ghcr.io/CoulombTechnologies/super-linter:latest",
   "customizations": {
     "vscode": {
       "settings": {},
